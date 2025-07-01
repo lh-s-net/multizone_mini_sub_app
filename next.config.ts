@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+// import {NextConfig} from 'next';
+//
+// /** @type {NextConfig} */
+// const nextConfig: NextConfig = {
+//   basePath: '/app1', // Die Sub-App läuft unter diesem Pfad
+// };
+//
+// export default nextConfig;
