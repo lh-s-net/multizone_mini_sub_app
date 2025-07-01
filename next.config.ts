@@ -1,8 +1,8 @@
-// import {NextConfig} from 'next';
-//
-// /** @type {NextConfig} */
-// const nextConfig: NextConfig = {
-//   basePath: '/app1', // Die Sub-App läuft unter diesem Pfad
-// };
-//
-// export default nextConfig;
+/** @type {import('next').NextConfig} */
+const isVercel = process.env.VERCEL === '1';
+
+const nextConfig = {
+  basePath: isVercel ? '/sub-app' : '',
+};
+
+module.exports = nextConfig;
