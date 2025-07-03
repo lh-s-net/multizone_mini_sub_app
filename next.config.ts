@@ -1,8 +1,7 @@
-/** @type {import('next').NextConfig} */
-const isVercel = process.env.VERCEL === '1';
+import type { NextConfig } from "next";
 
-const nextConfig = {
-  basePath: isVercel ? '/sub-app' : '',
-};
+const nextConfig: NextConfig = {
+  basePath: '/sub-app',
+}
 
-module.exports = nextConfig;
+export default nextConfig;
